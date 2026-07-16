@@ -1,0 +1,74 @@
+/* Inline Code */
+code {
+  font-family: code, monospace;
+}
+
+/* 1. Container */
+pre code.hljs {
+  margin-block: 16px;
+  padding: 16px;
+
+  display: block;
+  overflow-x: auto;
+
+  background-color: #292A30;
+  color: #D4D4D4;
+
+  border-radius: 16px;
+  @supports (corner-shape: squircle) {
+    border-radius: 32px;
+    corner-shape: squircle;
+  }
+
+  font-family: code, monospace;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* 2. Keywords */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-doctag {
+  color: #FC5FA3;
+  font-weight: bold;
+}
+
+/* Names */
+.hljs-title,
+.hljs-title.function_,
+.hljs-title.class_ {
+  color: #66BAC2;
+}
+
+/* Strings & Metadata */
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #FC6A5D;
+}
+
+/* Numbers & Built-in Literals */
+.hljs-number,
+.hljs-literal,
+.hljs-variable {
+  color: #9686FF;
+}
+
+/* 6. Comments & Quotes */
+.hljs-comment,
+.hljs-quote {
+  color: #6C7986;
+  font-style: italic;
+}
+
+/* 7. Markdown/HTML Tags & Attributes */
+.hljs-tag,
+.hljs-name,
+.hljs-attr {
+  color: #FC6A5D;
+}
+
+/* Regular Expressions & Escape Characters */
+.hljs-regexp,
+.hljs-link {
+  color: #A7ECF2;
+}

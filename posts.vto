@@ -1,0 +1,15 @@
+---
+layout: layouts/main.vto 
+---
+
+<h1>Posts</h1>
+
+{{ set posts = search.pages("url^=/posts/ url!=/posts/", "date=desc") }}
+{{ for post of posts }}
+  <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+  <span>
+    <time datetime="{{ post.date }}">{{ post.date |> date("HUMAN_DATE") }}</time>
+    &mdash;
+    <i>{{ post.summary }}</i>
+  </span>
+{{ /for }}

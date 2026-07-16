@@ -1,0 +1,39 @@
+---
+type: post
+links:
+  - name: back to posts
+    href: /posts
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/color.css">
+    <link rel="stylesheet" href="/code.css">
+    <link rel="stylesheet" href="/fonts.css">
+  </head>
+  <body>
+    <nav>
+      {{ for link of links }}
+        <a href="{{ link.href }}">{{ link.name }}</a>
+      {{ /for }}
+    </nav>
+    <main>
+      <h1>{{ title }}</h1>
+      <span><time datetime="{{ date }}">{{ date |> date("HUMAN_DATE") }}</time> &mdash; <i>{{ summary }}</i></span>
+      <br /><br />
+      {{ content }}
+    </main>
+    <footer>
+      <p>
+        Made with love and sleepless nights by It Just Crashed.
+        <br />
+        This entire site's code is (un)licensed under the <a href="https://unlicense.org/">Unlicense</a> and is voluntarily placed in the public domain.
+      </p>
+    </footer>
+  </body>
+</html>

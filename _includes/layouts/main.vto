@@ -1,0 +1,38 @@
+---
+type: main
+links:
+  - name: the top
+    href: /
+  - name: projects
+    href: /projects
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Landing</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/color.css">
+    <link rel="stylesheet" href="/code.css">
+    <link rel="stylesheet" href="/fonts.css">
+  </head>
+  <body>
+    <nav>
+      {{ for link of links }}
+        <a href="{{ link.href }}">{{ link.name }}</a>
+      {{ /for }}
+    </nav>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>
+        Made with love and sleepless nights by It Just Crashed.
+        <br />
+        This entire site's code is (un)licensed under the <a href="https://unlicense.org/">Unlicense</a> and is voluntarily placed in the public domain.
+      </p>
+    </footer>
+  </body>
+</html>
