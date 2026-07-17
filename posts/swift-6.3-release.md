@@ -35,7 +35,7 @@ func greet(_ name: UnsafePointer<CChar>) {
 
 ## Module Selectors
 
-My biggest pet peeve with Swift frameworks is types that have the exact same name as their module (looking at you, [drops](https://swiftpackageindex.com/omaralbeik/Drops)). No, i don't want to play compiler roulette every time i build the billionth Cookie Clicker clone.
+My biggest frustration with Swift frameworks is types that have the exact same name as their module (looking at you, [Drops](https://swiftpackageindex.com/omaralbeik/Drops)). No, I don't want to play compiler roulette every time I build the billionth Cookie Clicker clone.
 
 The following snippet makes two of the exact same value.
 
