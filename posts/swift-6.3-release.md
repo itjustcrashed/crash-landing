@@ -1,4 +1,5 @@
 ---
+layout: layouts/post.vto
 title: "Babe, wake up! Swift has module selectors"
 summary: "It's like apple remembered what a language is!"
 date: 2026-03-29
