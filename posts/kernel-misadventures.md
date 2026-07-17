@@ -3,7 +3,6 @@ layout: layouts/post.vto
 title: "Kernel Misadventures"
 summary: "I think i took \"build a PC\" too literally..."
 date: 2026-04-12
-lastUpdated: 2026-07-05
 ---
 
 So i've recently gotten into low-level development. It's been really fun to learn about how computers actually *do* stuff (it's just a lot of math)! I now have opinions on weird things like calling conventions, assembly syntax, and kernel architecture. But one thing has not been so fun.

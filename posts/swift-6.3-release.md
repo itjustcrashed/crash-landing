@@ -3,7 +3,6 @@ layout: layouts/post.vto
 title: "Babe, wake up! Swift has module selectors"
 summary: "It's like apple remembered what a language is!"
 date: 2026-03-29
-lastUpdated: 2026-07-05
 ---
 
 If you haven't heard, as of writing this, Swift 6.3 has literally just released. It is a much-needed update, as I alluded to in the summary of this post.
